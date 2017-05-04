@@ -6,6 +6,7 @@ import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtField;
 import javassist.Loader;
+import javassist.LoaderClassPath;
 import javassist.Modifier;
 import javassist.Translator;
 import javassist.compiler.Javac.CtFieldWithInit;
@@ -35,6 +36,23 @@ public class ClassLoaderTests {
     Class c = cl.loadClass(TEST_CLASS);
     Object rect = c.newInstance();
 
+    assertEquals("name", c.getDeclaredField("name").getName());
+  }
+
+
+  @Test
+  public void testLoaderClassPath() throws Exception{
+    ClassPool pool = ClassPool.getDefault();
+
+    ClassLoader loader = this.getClass().getClassLoader();
+    LoaderClassPath classPath = new LoaderClassPath(loader);
+    pool.insertClassPath(classPath);
+
+    CtClass ct = pool.get(TEST_CLASS);
+    CtField ctField = CtFieldWithInit.make("private String name;", ct);
+    ct.addField(ctField);
+
+    Class c = ct.toClass();
     assertEquals("name", c.getDeclaredField("name").getName());
   }
 

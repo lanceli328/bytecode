@@ -21,6 +21,8 @@ public class SearchPathTests {
   public void testAddSearchPath() throws Exception {
     ClassPool pool = ClassPool.getDefault();
 
+    ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+
     //CtClass cc = pool.get("com.lance.bytecode.BankTransactions");
     byte[] b = pool.get("com.lance.bytecode.BankTransactions").toBytecode();
     String className = BankTransactions.class.getName();
