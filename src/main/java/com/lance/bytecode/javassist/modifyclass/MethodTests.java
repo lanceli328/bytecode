@@ -8,6 +8,7 @@ import com.lance.bytecode.ImportantLog;
 import com.sun.tools.corba.se.idl.StringGen;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.security.ProtectionDomain;
 import java.util.List;
 import javassist.CannotCompileException;
 import javassist.ClassPool;
@@ -362,4 +363,21 @@ public class MethodTests {
     assertEquals("12", result);
   }
 
+  @Test
+  public void testInsertStringBefore() throws Exception {
+    ClassPool pool = ClassPool.getDefault();
+
+    CtClass cc = pool.get("java.lang.String");
+    CtMethod m = cc.getDeclaredMethod("toString");
+    m.insertBefore("{ System.out.println(\"I am tester\");}");
+
+    cc.writeFile();
+    ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+    classLoader.loadClass("java.lang.String");
+    ProtectionDomain domain = String.class.getProtectionDomain();
+
+    String o = "anything";
+    System.out.println(o.toString());
+
+  }
 }

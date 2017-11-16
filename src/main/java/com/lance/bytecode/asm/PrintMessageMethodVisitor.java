@@ -1,7 +1,6 @@
 package com.lance.bytecode.asm;
 
 import com.google.common.collect.Lists;
-import java.util.Collections;
 import java.util.List;
 import jdk.internal.org.objectweb.asm.AnnotationVisitor;
 import jdk.internal.org.objectweb.asm.MethodVisitor;
@@ -65,4 +64,5 @@ public class PrintMessageMethodVisitor extends MethodVisitor {
           "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
     }
   }
+
 }
