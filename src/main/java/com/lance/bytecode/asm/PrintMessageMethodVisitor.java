@@ -2,13 +2,13 @@ package com.lance.bytecode.asm;
 
 import com.google.common.collect.Lists;
 import java.util.List;
-import jdk.internal.org.objectweb.asm.AnnotationVisitor;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 /**
  * Created by lihua on 18/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class PrintMessageMethodVisitor extends MethodVisitor {
 

@@ -1,7 +1,7 @@
 package com.lance.bytecode.asm.classloader;
 
 /**
- * Created by lihua on 16/11/2017. email: lihua@seczone.cn
+ * Created by lihua on 16/11/2017. email: lihua@qq.com
  */
 public class MyClassLoader extends ClassLoader {
 

@@ -3,7 +3,7 @@ package com.lance.bytecode.stackframe;
 import org.junit.Test;
 
 /**
- * Created by lihua on 8/11/2017. email: lihua@seczone.cn
+ * Created by lihua on 8/11/2017. email: lihua@qq.com
  */
 public class FrameTest {
   private String str1;

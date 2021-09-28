@@ -1,10 +1,10 @@
-package com.lance.bytecode.asm;
+package com.lance.bytecode.asm.classtests;
 
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Opcodes;
 
 /**
- * Created by lihua on 16/11/2017. email: lihua@seczone.cn
+ * Created by lihua on 16/11/2017. email: lihua@qq.com
  */
 public class MyClassWriter {
 
@@ -24,4 +24,5 @@ public class MyClassWriter {
     cw.visitEnd();
     return cw.toByteArray();
   }
+
 }

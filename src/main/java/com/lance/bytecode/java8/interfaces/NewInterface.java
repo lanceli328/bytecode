@@ -2,7 +2,7 @@ package com.lance.bytecode.java8.interfaces;
 
 /**
  * Created by lihua on 28/5/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public interface NewInterface {
 

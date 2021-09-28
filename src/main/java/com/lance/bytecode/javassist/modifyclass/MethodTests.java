@@ -2,14 +2,12 @@ package com.lance.bytecode.javassist.modifyclass;
 
 import static org.junit.Assert.assertEquals;
 
-import com.lance.bytecode.BankTransactions;
 import com.lance.bytecode.BankAccount;
+import com.lance.bytecode.BankTransactions;
 import com.lance.bytecode.ImportantLog;
-import com.sun.tools.corba.se.idl.StringGen;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.security.ProtectionDomain;
-import java.util.List;
 import javassist.CannotCompileException;
 import javassist.ClassPool;
 import javassist.CtClass;
@@ -22,7 +20,7 @@ import org.junit.Test;
 
 /**
  * Created by lihua on 20/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class MethodTests {
 

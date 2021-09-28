@@ -3,7 +3,7 @@ package com.lance.bytecode.controller;
 import org.junit.Test;
 
 /**
- * Created by lihua on 9/11/2017. email: lihua@seczone.cn
+ * Created by lihua on 9/11/2017. email: lihua@qq.com
  */
 public class SwitchBytes {
 

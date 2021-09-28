@@ -2,7 +2,7 @@ package com.lance.bytecode;
 
 /**
  * Created by lihua on 20/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class BankAccount {
   private String name = "test";

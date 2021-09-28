@@ -5,7 +5,7 @@ import java.lang.instrument.Instrumentation;
 
 /**
  * Created by lihua on 18/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class AsmAgent {
   public static void premain(String agentArgs, Instrumentation inst) {

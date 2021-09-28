@@ -1,12 +1,12 @@
 package com.lance.bytecode.asm;
 
-import jdk.internal.org.objectweb.asm.ClassVisitor;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 /**
  * Created by lihua on 18/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class LogMethodClassVisitor extends ClassVisitor {
   private String className;

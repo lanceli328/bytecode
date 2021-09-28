@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by lihua on 9/11/2017. email: lihua@seczone.cn
+ * Created by lihua on 9/11/2017. email: lihua@qq.com
  */
 
 @Target(ElementType.METHOD)

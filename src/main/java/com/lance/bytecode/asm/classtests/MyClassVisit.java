@@ -1,10 +1,7 @@
-package com.lance.bytecode.asm;
+package com.lance.bytecode.asm.classtests;
 
-import java.io.IOException;
-import org.junit.Test;
 import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.Attribute;
-import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.MethodVisitor;
@@ -12,7 +9,7 @@ import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.TypePath;
 
 /**
- * Created by lihua on 16/11/2017. email: lihua@seczone.cn
+ * Created by lihua on 16/11/2017. email: lihua@qq.com
  */
 public class MyClassVisit extends ClassVisitor {
 

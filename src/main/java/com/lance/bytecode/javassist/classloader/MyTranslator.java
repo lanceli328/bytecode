@@ -10,7 +10,7 @@ import javassist.Translator;
 
 /**
  * Created by lihua on 19/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class MyTranslator implements Translator {
 

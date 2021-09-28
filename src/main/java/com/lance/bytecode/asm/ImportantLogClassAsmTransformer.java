@@ -3,13 +3,13 @@ package com.lance.bytecode.asm;
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
-import jdk.internal.org.objectweb.asm.ClassReader;
-import jdk.internal.org.objectweb.asm.ClassVisitor;
-import jdk.internal.org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.ClassWriter;
 
 /**
  * Created by lihua on 18/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class ImportantLogClassAsmTransformer implements ClassFileTransformer {
 

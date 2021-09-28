@@ -14,7 +14,7 @@ import org.junit.Test;
 
 /**
  * Created by lihua on 19/4/2017.
- * email: lihua@seczone.cn
+ * email: lihua@qq.com
  */
 public class ClassLoaderTests {
 
